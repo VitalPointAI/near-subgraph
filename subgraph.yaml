@@ -1,0 +1,22 @@
+specVersion: 0.0.4
+description: DID registry # the name of the subgraph
+repository: https://github.com/VitalPointAI/catalyst-subgraph-registry # repo where subgraph project is stored
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: near
+    name: receipts # could also be blocks
+    network: near-mainnet # currently only near-mainnet is available
+    source:
+      account: did.near # contract account you want to pull data from
+      startBlock: 54167320 # starting block on near-mainnet for indexing
+    mapping:
+      apiVersion: 0.0.5
+      language: wasm/assemblyscript
+      file: ./src/mapping.ts
+      entities:
+        - Account # the example entity in the schema.graphql file
+      receiptHandlers:
+        - handler: handleReceipt # name of the receipt handler
+      blockHandlers:
+        - handler: handleBlock # name of block handler

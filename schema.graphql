@@ -1,0 +1,5 @@
+type Account @entity {
+  id: ID! # required - don't change
+  accountId: String! # probably required - NEAR account name
+  actionLogs: [String!] # probably required, where logs are returned in a receipt
+}
