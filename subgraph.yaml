@@ -18,5 +18,3 @@ dataSources:
         - Account # the example entity in the schema.graphql file
       receiptHandlers:
         - handler: handleReceipt # name of the receipt handler
-      blockHandlers:
-        - handler: handleBlock # name of block handler
