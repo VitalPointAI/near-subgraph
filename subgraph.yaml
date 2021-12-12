@@ -1,6 +1,6 @@
 specVersion: 0.0.4
 description: DID registry # the name of the subgraph
-repository: https://github.com/VitalPointAI/catalyst-subgraph-registry # repo where subgraph project is stored
+repository: https://github.com/VitalPointAI/near-subgraph-template.git # repo where subgraph project is stored
 schema:
   file: ./schema.graphql
 dataSources:
@@ -16,5 +16,6 @@ dataSources:
       file: ./src/mapping.ts
       entities:
         - Account # the example entity in the schema.graphql file
+        - Log # example log entity in the schema.graphql file
       receiptHandlers:
         - handler: handleReceipt # name of the receipt handler
