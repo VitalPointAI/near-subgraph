@@ -95,8 +95,25 @@ function handleAction(
     log.info("Not processed - FunctionCall is: {}", [functionCall.methodName]);
   }
 
-  // put the init function here
-  
+  // Your turn! Write underneath that code, but before account.save();
+  // ---------------------------------------------------------------------
+  // - implement an if statement to find the appropriate function call
+  // - if it is there, set the receiptId
+  // - set the signerId
+  // - create a new Log
+  // - parse the objects and loop through the keys to assign the values to the entity properties (don't forget correct types)
+  // - save the log and push in the the accounts log array
+
+  // Here's the init log for reference:
+  // logging.log(`{"EVENT_JSON":{
+  //  "standard":"nep171",
+  //  "version":"1.0.0",
+  //  "event":"init",
+  //  "data":{
+  //    "adminId":"${adminId}",
+  //    "adminSet":${Context.blockTimestamp},
+  //    "accountId":"${adminId}"
+  //  }}}`)
 
   
   accounts.save();
