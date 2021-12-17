@@ -95,7 +95,7 @@ function handleAction(
     log.info("Not processed - FunctionCall is: {}", [functionCall.methodName]);
   }
 
-  // Your turn! Write underneath that code, but before account.save();
+  // Your turn! Write underneath that code, but before accounts.save();
   // ---------------------------------------------------------------------
   // - implement an if statement to find the appropriate function call
   // - if it is there, set the receiptId
