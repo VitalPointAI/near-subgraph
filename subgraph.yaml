@@ -6,7 +6,7 @@ schema:
 dataSources:
   - kind: near
     name: receipts # could also be blocks
-    network: near-mainnet # currently only near-mainnet is available
+    network: near-mainnet # can choose either near-mainnet or near-testnet
     source:
       account: did.near # contract account you want to pull data from
       startBlock: 54167320 # starting block on near-mainnet for indexing
